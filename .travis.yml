@@ -1,0 +1,10 @@
+os: linux
+dist: xenial
+
+language: java
+
+jdk:
+  - oraclejdk11
+
+script:
+  - gradle build

@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group 'org.octogration'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.11'
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    project.ext {
+        feignCoreVersion = '9.1.0'
+        jacksonVersion = '2.0.1'
+        jacksonDatatypeJsrVersion = '2.13.4'
+        openFeignCoreVersion = '9.1.0'
+        openFeignGsonVersion = '9.4.0'
+        lombokVersion = '1.18.24'
+        sl4jVersion = '2.0.0'
+        thirteenExtraVersion = '1.7.1'
+        junitVersion = '5.8.1'
+    }
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: sl4jVersion
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonDatatypeJsrVersion
+    implementation group: 'org.threeten', name: 'threeten-extra', version: thirteenExtraVersion
+    implementation group: 'io.github.openfeign', name: 'feign-core', version: openFeignCoreVersion
+    implementation group: 'io.github.openfeign', name: 'feign-gson', version: openFeignGsonVersion
+
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+
+    testCompileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    testImplementation group: 'org.slf4j', name: 'slf4j-log4j12', version: sl4jVersion, ext: 'pom'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitVersion
+    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitVersion
+}
+
+test {
+    useJUnitPlatform()
+}
