@@ -1,7 +1,7 @@
 package org.octogration.rest.client;
 
 import java.util.Map;
-import org.github.integration.model.dto.GithubInstallationToken;
+import org.octogration.model.dto.GithubInstallationToken;
 import feign.HeaderMap;
 import feign.Param;
 import feign.RequestLine;

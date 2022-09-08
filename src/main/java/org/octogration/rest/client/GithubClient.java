@@ -1,15 +1,15 @@
 package org.octogration.rest.client;
 
+import java.io.File;
 import java.util.List;
 import java.util.Map;
-import org.github.integration.model.dto.Commit;
-import org.github.integration.model.dto.CommitSha;
-import org.github.integration.model.dto.File;
-import org.github.integration.model.dto.GitBranchView;
-import org.github.integration.model.dto.GitCollaboratorView;
-import org.github.integration.model.dto.GitRepositoryView;
-import org.github.integration.model.dto.GithubRateCommon;
-import org.github.integration.model.dto.PullRequest;
+import org.octogration.model.dto.Commit;
+import org.octogration.model.dto.CommitSha;
+import org.octogration.model.dto.GitBranchView;
+import org.octogration.model.dto.GitCollaboratorView;
+import org.octogration.model.dto.GitRepositoryView;
+import org.octogration.model.dto.GithubRateCommon;
+import org.octogration.model.dto.PullRequest;
 import feign.HeaderMap;
 import feign.Param;
 import feign.QueryMap;

@@ -1,11 +1,11 @@
 package org.octogration;
 
-import org.github.integration.config.GithubClientFactory;
-import org.github.integration.config.GithubContext;
+import org.octogration.config.GithubClientFactory;
+import org.octogration.config.GithubContext;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Main {
+public class TestExample {
     public static void main(String[] args) {
         try {
             var githubClient = GithubClientFactory.createGithubClient();
