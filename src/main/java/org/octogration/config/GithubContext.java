@@ -2,7 +2,7 @@ package org.octogration.config;
 
 import java.util.Base64;
 import java.util.Map;
-import org.github.integration.util.StringUtils;
+import org.octogration.util.StringUtils;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

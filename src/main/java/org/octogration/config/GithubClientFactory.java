@@ -1,8 +1,8 @@
 package org.octogration.config;
 
-import org.github.integration.rest.client.GithubAppClient;
-import org.github.integration.rest.client.GithubClient;
-import org.github.integration.rest.client.GithubIssuesClient;
+import org.octogration.rest.client.GithubAppClient;
+import org.octogration.rest.client.GithubClient;
+import org.octogration.rest.client.GithubIssuesClient;
 import feign.Feign;
 import feign.gson.GsonDecoder;
 

@@ -2,7 +2,7 @@ package org.octogration.rest.client;
 
 import java.util.List;
 import java.util.Map;
-import org.github.integration.model.dto.GitIssue;
+import org.octogration.model.dto.GitIssue;
 import feign.HeaderMap;
 import feign.Param;
 import feign.QueryMap;
