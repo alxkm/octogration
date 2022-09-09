@@ -12,11 +12,8 @@ repositories {
 
 allprojects {
     project.ext {
-        feignCoreVersion = '9.1.0'
-        jacksonVersion = '2.0.1'
-        jacksonDatatypeJsrVersion = '2.13.4'
-        openFeignCoreVersion = '9.1.0'
-        openFeignGsonVersion = '9.4.0'
+        jacksonVersion = '2.13.4'
+        openFeignCoreVersion = '11.9.1'
         lombokVersion = '1.18.24'
         sl4jVersion = '2.0.0'
         thirteenExtraVersion = '1.7.1'
@@ -28,10 +25,10 @@ dependencies {
     compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     implementation group: 'org.slf4j', name: 'slf4j-api', version: sl4jVersion
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
-    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonDatatypeJsrVersion
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonVersion
     implementation group: 'org.threeten', name: 'threeten-extra', version: thirteenExtraVersion
     implementation group: 'io.github.openfeign', name: 'feign-core', version: openFeignCoreVersion
-    implementation group: 'io.github.openfeign', name: 'feign-gson', version: openFeignGsonVersion
+    implementation group: 'io.github.openfeign', name: 'feign-gson', version: openFeignCoreVersion
 
     annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
