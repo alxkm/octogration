@@ -10,9 +10,9 @@ public class TestExample {
         try {
             var githubClient = GithubClientFactory.createGithubClient();
             var ctx = GithubContext.builder()
-                                   .login("login")
-                                   .password("password")
                                    .owner("owner")
+                                   .isApp(true)
+                                   .token("yourGithubToken")
                                    .repository("repo").build();
 
             githubClient.getRepositoryContributors(ctx.getHeaders(), ctx.getOwnerRepository())

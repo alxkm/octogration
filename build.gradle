@@ -22,7 +22,6 @@ allprojects {
 }
 
 dependencies {
-    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     implementation group: 'org.slf4j', name: 'slf4j-api', version: sl4jVersion
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonVersion
@@ -30,6 +29,7 @@ dependencies {
     implementation group: 'io.github.openfeign', name: 'feign-core', version: openFeignCoreVersion
     implementation group: 'io.github.openfeign', name: 'feign-gson', version: openFeignCoreVersion
 
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
 
